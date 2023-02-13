@@ -1,0 +1,8 @@
+<h2>Details</h2>
+
+<ul>
+    @foreach (var claim in Context.User.Claims)
+    {
+        <li>@claim.Type : <strong>@claim.Value</strong></li>
+    }
+</ul>
